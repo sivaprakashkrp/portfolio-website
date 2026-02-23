@@ -51,7 +51,7 @@ a, input {
 }
 
 .card-btn {
-	@apply font-mono text-center border border-dashed py-2 hover:bg-terminal hover:border-solid border-terminal hover:text-black transition-colors
+	@apply font-mono text-center border border-dashed py-2 hover:bg-terminal hover:border-solid border-terminal hover:text-black transition-colors flex justify-center items-center
 }
 
 .project-card-btn {

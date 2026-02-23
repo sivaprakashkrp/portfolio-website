@@ -7,10 +7,10 @@ const About = () => {
             <div id="about" className='mb-10'>
                 <h2 className="section-heading mb-20 md:mb-0">About.</h2>
                 <div className="row-1 w-11/12 mx-auto flex justify-between items-center flex-col-reverse md:flex-row gap-20">
-                    <div className="about-text w-full md:w-3/4">
+                    <div className="about-text w-full xl:w-3/4">
                         <div className="font-mono font-medium text-lg">
                             <div className="about-header text-2xl md:text-3xl text-center w-full mt-4 mb-8">Hello There! This is Sivaprakash</div>
-                            <div className="about-block-wrapper grid md:flex grid-cols-2 gap-5 text-center min-h-72">
+                            <div className="about-block-wrapper grid lg:flex grid-cols-2 gap-5 text-center min-h-72">
                                 <div className="about-block col-span-2"><AboutBlock msg="A Computer Science Student at Thiagarajar College of Engineering" /></div>
                                 <div className="about-block"><AboutBlock msg="A Passionate Frontend Developer" /></div>
                                 <div className="about-block"><AboutBlock msg="A Learning Backend Developer" /></div>
@@ -19,7 +19,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="donut-cont w-full md:w-1/2 h-100 text-[12px] hidden md:block">
+                    <div className="donut-cont w-full md:w-1/2 h-100 text-[12px] hidden xl:block">
                         <Donut />
                     </div>
                 </div>

@@ -45,6 +45,14 @@ export const projects = [
         code: "https://github.com/sivaprakashkrp/btrls"
     },
     {
+        id: 6,
+        title: "columbus",
+        description: "A TUI file explorer written in Rust which can open files through user-defined configuration",
+        tech_used: ["Rust", "Ratatui"],
+        url: "https://github.com/sivaprakashkrp/columbus/releases/latest",
+        code: "https://github.com/sivaprakashkrp/columbus"
+    },
+    {
         id: 5,
         title: "ebod",
         description: "A command-line utility that makes the process of local manual backups easy and efficient.",

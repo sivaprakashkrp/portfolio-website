@@ -115,7 +115,7 @@ const Game = ({ onClose }) => {
             }
 
             // Player (Triangle)
-            ctx.fillStyle = '#0f0'; // Retro green
+            ctx.fillStyle = '#0f0';
             ctx.beginPath();
             ctx.moveTo(player.x + player.size / 2, player.y);
             ctx.lineTo(player.x + player.size, player.y + player.size);
@@ -123,7 +123,7 @@ const Game = ({ onClose }) => {
             ctx.fill();
 
             // Bullets
-            ctx.fillStyle = '#ffff00'; // Yellow bullets
+            ctx.fillStyle = 'lime';
             bullets.forEach(b => ctx.fillRect(b.x, b.y, b.width, b.height));
 
             // Enemies
@@ -143,7 +143,7 @@ const Game = ({ onClose }) => {
 
     return (
         <div className="fixed inset-0 z-50 bg-black cursor-none">
-            <canvas ref={canvasRef} className="block" />
+            <canvas ref={canvasRef} className="block cursor-none" />
             <div className="absolute top-4 left-4 text-green-400 font-mono text-xl pointer-events-none">
                 SCORE: {score}
             </div>
@@ -151,7 +151,7 @@ const Game = ({ onClose }) => {
                 QUIT (ESC)
             </button>
             {gameOver && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 text-terminal font-mono cursor-default">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 text-terminal font-mono cursor-none">
                     <h1 className="text-6xl font-bold mb-4">GAME OVER</h1>
                     <p className="text-2xl mb-8">Final Score: {score}</p>
                     <button onClick={onClose} className="border border-terminal px-6 py-2 text-terminal hover:bg-terminal hover:text-black transition-colors cursor-none">
