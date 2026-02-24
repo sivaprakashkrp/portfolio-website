@@ -23,7 +23,8 @@ const Contact = () => {
 					{/* !TODO: Add FormSubmit link to contact form */}
 					<div className="">
 						<h3 className="font-mono text-2xl md:text-3xl text-center mb-5"> ~ Or Send a Message ~ </h3>
-						<form action="https://formsubmit.co/sivaprakashkrp@gmail.com" className='double-dashed-border flex flex-col items-center justify-around' method='POST'>
+						<form action="https://formsubmit.co/9131ba8ec648a14cd55955379d5ebd86" className='double-dashed-border flex flex-col items-center justify-around' method='POST'>
+							<input type="hidden" name="_next" value="https://psivaprakash.netlify.app"></input>
 							<div className="input-field-cont">
 								<label htmlFor="name">Your Name</label>
 								<input type="text" name="name" id="name" required className='input-field' />

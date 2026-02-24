@@ -15,7 +15,7 @@ const HelpDialog = ({ onClose }) => {
                     </div>
                     <div className="flex justify-between pb-2">
                         <span>Game Navigation</span>
-                        <span className="text-terminal font-bold">a, d</span>
+                        <span className="text-terminal font-bold">a, d / ←, →</span>
                     </div>
                     <div className="flex justify-between pb-2">
                         <span>Shooting in Game</span>
